@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            {% block title %}
+            
+            {%endblock %}
+            Samuel Talledo
+        </title>
+    </head>
+    <body>
+        <h1>Proyecto Web (LP3) | Samuel Talledo</h1>
+        <hr/>
+        <ul>
+            <li>
+                <a href="/inicio">Inicio</a>
+            </li>
+            <li>
+                <a href="/saludo">MENSAJE DE SALUDO</a>
+            </li>
+            <li>
+                <a href="/rango">Mostrar números [a,b]</a>
+            </li>
+            <li>
+                <a href="/rango2/10/15">Mostrar números [10,15]</a>
+            </li>
+        </ul>
+        <hr/>
+
+        <div id="content">
+            {% block content %}
+                <strong> Contenido en layout (Padre) </strong>
+            {% endblock %}
+        </div>
+        <footer>
+            Untels - Lenguaje de Programación III &copy; Samuel Talledo 
+        </footer>
+    </body>
+</html>
